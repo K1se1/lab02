@@ -16,7 +16,7 @@ BigInt::BigInt(const long long& num, const int& s)
     int minsize = size < sizeof(num) * 8 ? size : sizeof(num)*8;
     for (int i = 0; i < minsize; ++i)
     {
-        number.push_back(num & (static_cast<long long>(1) << i));
+        number.push_back(num & (static_cast<long long>(1ll) << i));
     }
     for (int i = minsize; i < size; ++i)
     {
