@@ -64,7 +64,7 @@ int main()
 	//A.resize(256);
 	B = 1;
 	//B.resize(256);
-	while (input_1 != 0)
+	while (input_1 != 0) // Фибоначчи
 	{
 		A += B;
 		B = A + -B;
